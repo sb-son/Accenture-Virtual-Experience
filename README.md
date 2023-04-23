@@ -28,6 +28,6 @@ Write stories for a new feature to help plan the next sprint.
 >Agile Methodology, Software Development Lifecycle (SDLC)
 
 # Setup and Workflow
-1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) the repository: Click the "Fork" button in the top right corner of the repository page to create a copy of the repositroy under your own GitHub account.
+1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) the repository: Click the "Fork" button in the top right corner of the repository page to create a copy of the repository under your own GitHub account.
 2. [Clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) the forked repository: Once you have forked the repository, you need to clone it to your local machine.
-3. Navigate over to the [docs](docs) to read the overview and view your tasks.
+3. Navigate over to the [docs](docs) to read the overview and to get started on your tasks.
