@@ -29,5 +29,6 @@ Write stories for a new feature to help plan the next sprint.
 
 # Setup and Workflow
 1. [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) the repository: Click the "Fork" button in the top right corner of the repository page to create a copy of the repository under your own GitHub account.
-2. [Clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) the forked repository: Once you have forked the repository, you need to clone it to your local machine.
-3. Navigate over to the [docs](docs) to read the overview and to get started on your tasks.
+2. [Clone](https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository) the forked repository to your IDE: Once you have forked the repository, you need to clone it to your local machine.
+3. For additional help setting up your development environment, [read this](mock_company_application_codebase/README.md).
+4. Navigate over to the [docs](docs) to read the overview and to get started on your tasks.
