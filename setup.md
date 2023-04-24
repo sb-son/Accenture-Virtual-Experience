@@ -19,10 +19,10 @@ This is the e-commerce application for Mock Company.  It's built using the follo
 
 To develop against this codebase, the following development tools should be installed on your
 workstation first:
- * [Java 8 JDK](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
- * [Node 12+](https://nodejs.org/en/download/)
- * [Git](https://github.com/git-guides/install-git)   
- * [GitHub](https://docs.github.com/en/github/getting-started-with-github/quickstart/set-up-git)
+* [Java 8 JDK](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
+* [Node 12+](https://nodejs.org/en/download/)
+* [Git](https://github.com/git-guides/install-git)
+* [GitHub](https://docs.github.com/en/github/getting-started-with-github/quickstart/set-up-git)
 
 ### IDE Setup
 
@@ -48,16 +48,16 @@ To build and start the application, run the Gradle `bootRun` task
     ./gradlew bootRun  # on Mac/Linux
     gradlew bootRun    # on Windows
 
-This will build the UI, build the Java API, and start the application at the following 
+This will build the UI, build the Java API, and start the application at the following
 web address: http://localhost:8080
 
 ### Common Gradle Tasks
 
- * `test` - run all unit tests
- * `assemble` - build and package the application
- * `build` - runs `test` and `assemble`
- * `clean` - removes generated files/folders
- * `bootRun` - compiles and runs the application
+* `test` - run all unit tests
+* `assemble` - build and package the application
+* `build` - runs `test` and `assemble`
+* `clean` - removes generated files/folders
+* `bootRun` - compiles and runs the application
 
 [java]: https://docs.oracle.com/javase/8/docs/api/
 [gradle]: https://docs.gradle.org/6.8.1/userguide/userguide.html

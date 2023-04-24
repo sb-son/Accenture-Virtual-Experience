@@ -4,8 +4,9 @@
 # Ignore Gradle build output directory
 build
 
-# This directory is generated from client-app/build
+# This directory is generated from client-app/build 
 src/main/webapp
 
 .idea
 .DS_Store
+
