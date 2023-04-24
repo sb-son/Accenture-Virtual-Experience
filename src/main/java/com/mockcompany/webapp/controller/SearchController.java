@@ -86,8 +86,17 @@ public class SearchController {
         // This is a loop that the code inside will execute on each of the items from the database.
         for (ProductItem item : allItems) {
             // TODO: Figure out if the item should be returned based on the query parameter!
-            boolean matchesSearch = true;
-            itemList.add(item);
+            String search = query.trim().toLowerCase();
+            boolean matchesSearch = item.getName().toLowerCase().contains(search) || item.getDescription().toLowerCase().contains(search);
+
+            if (query.startsWith("\"") && query.endsWith("\"")) {
+                String exactMatch = query.substring(1, query.length() - 1).trim().toLowerCase();
+                matchesSearch = (item.getName().trim().equalsIgnoreCase(exactMatch) || item.getDescription().trim().equalsIgnoreCase(exactMatch));
+            }
+
+            if (matchesSearch) {
+                itemList.add(item);
+            }
         }
         return itemList;
     }
