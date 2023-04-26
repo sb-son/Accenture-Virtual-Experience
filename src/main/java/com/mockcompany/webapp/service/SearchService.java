@@ -39,36 +39,29 @@ public class SearchService {
         }
         return itemList;
     }
+    // After reading code/tests, we can capture the important terms in an array!
+    private static final String[] importantTerms = new String[] {
+            "Cool",
+            "Amazing",
+            "Perfect",
+            "Kids"
+    };
 
     public SearchReportResponse searchReport() {
         Map<String, Integer> hits = new HashMap<>();
         SearchReportResponse response = new SearchReportResponse();
         response.setSearchTermHits(hits);
 
-//        int count = this.entityManager.createQuery("SELECT item FROM ProductItem item").getResultList().size();
-//        response.setProductCount(productItemRepository.countAll(hits));
-        hits.put("Cool", countCool());
-        hits.put("Kids", countKids());
-        hits.put("Amazing", countAmazing());
-        hits.put("Perfect", countPerfect());
+        // For each important term, query on it and add size of results to our Map
+        for (String term : importantTerms) {
+            hits.put(term, countTerm(term));
+        }
         response.setProductCount(productItemRepository.countAll());
 
         return response;
     }
 
-    private int countCool() {
-        return productItemRepository.countByNameContainingIgnoreCaseOrDescriptionContainingIgnoreCase("cool", "cool");
-    }
-
-    private int countKids() {
-        return productItemRepository.countByNameContainingIgnoreCaseOrDescriptionContainingIgnoreCase("kids", "kids");
-    }
-
-    private int countPerfect() {
-        return productItemRepository.countByNameContainingIgnoreCaseOrDescriptionContainingIgnoreCase("perfect", "perfect");
-    }
-
-    private int countAmazing() {
-        return productItemRepository.countByNameContainingIgnoreCaseOrDescriptionContainingIgnoreCase("amazing", "amazing");
+    private int countTerm(String term) {
+        return productItemRepository.countByNameContainingIgnoreCaseOrDescriptionContainingIgnoreCase(term, term);
     }
 }
