@@ -14,7 +14,6 @@ package com.mockcompany.webapp.controller;
 /*
  * An import statement allows the current class to use the class being imported
  */
-import com.mockcompany.webapp.data.ProductItemRepository;
 import com.mockcompany.webapp.model.ProductItem;
 /* The springframework package allows us to take advantage of the spring capabilities */
 import com.mockcompany.webapp.service.SearchService;
